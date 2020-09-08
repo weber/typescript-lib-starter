@@ -6,18 +6,24 @@
     "tslint-react",
     "tslint-config-prettier"
   ],
+  "exclude": [
+    "config/"
+  ],
   "rules": {
     // types related rules
-    "no-inferrable-types": true,
+    "no-inferrable-types": false,
     "no-namespace": {
       "options": [
         "allow-declarations"
       ]
     },
+    "no-unsafe-any": false,
+    "no-unused-expression": false,
+    "prefer-const": false,
     "interface-name": {
       "options": "never-prefix"
     },
-    "no-unsafe-any": true,
+    "no-console": false,
     // core lint rules
     "ban": {
       "options": [
@@ -68,10 +74,9 @@
     },
     "switch-default": true,
     // tslint:recommended overrides
-    "no-any": true,
+    "no-any": false,
     "member-access": {
       "options": [
-        "no-public"
       ]
     },
     "object-literal-sort-keys": false,

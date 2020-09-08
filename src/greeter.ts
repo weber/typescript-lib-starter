@@ -1,12 +1,12 @@
 import { IS_DEV } from './environment'
 
 export class Greeter {
-  constructor(private greeting: string) {}
-  greet() {
+  constructor (private greeting: string) {}
+  public greet () {
     return `Hello, ${this.greeting}!`
   }
 
-  greetMe() {
+  public greetMe () {
     /* istanbul ignore next line */
     if (IS_DEV) {
       // tslint:disable-next-line:no-console
